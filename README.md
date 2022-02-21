@@ -99,7 +99,7 @@ To download the open access chair data (already formatted for HDF5), as well as 
 ## Model Training
 Unless modifying the model architecture, the only file you should need to change is `config.py`. This file contains all model training hyperparameters, model hyperparameters themselves, and directory pathes.  This file defines an OrderedDict object of all these parameters which is passed through various modular portions of the code. The Session object in `session.py` tracks training, and is the primary mechanism for tracking and logging training statistics.  Moreover, all models are defined via the Session object to enable easier model checkpointing and resuming from checkpoints.
 
-####Notes on stabilizing model training
+#### Notes on stabilizing model training
 
 There are a number of heuristics necessary to train this model up to high resolutions as shown in the paper (i.e., 512 x 512).  It is important to follow these heuristics as the model has significant training instability due to its adversarial components.  Lower resolutions tend to be much easier to train (e.g., up to 64x64) for several reasons, but in general once the model gets to around 128x128 it is necessary to safeguard instabilities from the adversarial components.
 
@@ -147,26 +147,3 @@ Portions of this codebase were built on elements from the following papers or op
 * [Attention GAN](https://github.com/akanimax/attn_gan_pytorch/)
 * [IntroVAE: Introspective Variational Autoencoders forPhotographic Image Synthesis](https://arxiv.org/pdf/1807.06358.pdf)
 * [Categorical Reparametrization with Gumbel-Softmax](https://arxiv.org/pdf/1611.01144.pdf)
-
-[//]: # (## TODOs)
-
-[//]: # (- [X] Semi-supervised learning based on vehicle id.)
-
-[//]: # (- [X] Combined model includes predictive and generative models.)
-
-[//]: # (- [X] Get baseline models working in main experiment code)
-
-[//]: # (- [X] Get cometML working)
-
-[//]: # (- [X] Gumbel-Softmax for mixture components.)
-
-[//]: # (- [X] Include mixture model terms)
-
-[//]: # (- [X] Include Gumbel-Softmax entropy term)
-
-[//]: # (- [X] Kullbeck-Leibler terms calculated using density ratio and/or reparametrization trick &#40;or both&#41;)
-
-[//]: # (- [X] Refactor for open source release.)
-
-[//]: # ()
-[//]: # ()
