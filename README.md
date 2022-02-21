@@ -36,14 +36,14 @@ Burnap, A, Hauser, J, and Timoshenko, A (2021). Product Aesthetic Design: A Mach
 
 ## Usage
 
-####Replicating the paper
+#### Replicating the paper
 The code in this repository can be used to replicate the results in the paper.  You will need to download the open access image and ratings data used in this work, install many open source libraries (see Installation), modify the hyperparameters and directory pathes for your environment in `config.py`, then run:
 
     python experiment.py
 
 
 [//]: # (## Usage - )
-####Using your own data
+#### Using your own data
 Using your own data with this codebase requires you to convert your product image and aesthetics ratings datasets into the format the code expects. The dataset should be formatted by wrapping around the Torch Dataset object as well as HDF5
     for the underlying dataformat. This is a very fast data format and supports both
     loading into RAM or directly off disk.  Please see Installation and `chairs.py` for more details.
