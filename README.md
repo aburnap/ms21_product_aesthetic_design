@@ -1,7 +1,7 @@
-<img src="./external/product_aesthetic_augmentation.png" alt="crowd_expertise_plot" style="display: block; margin-left: auto; margin-right: auto; width: 50%; text-align: center;" >
+<p align="center"><img src="./external/product_aesthetic_augmentation.png" alt="crowd_expertise_plot" style="display: block; margin-left: auto; margin-right: auto; width: 50%; text-align: center;" > </p>
 
 ## Product Aesthetic Design: A Machine Learning Augmentation
-Code to define and train machine learning models for generating and predicting product aesthetics, and replicate results in, "Product Aesthetic Design: A Machine Learning Augmentation."  This code includes a number of features:
+Code to define and train machine learning models for generating and predicting product aesthetics, as well as replicate results in, "Product Aesthetic Design: A Machine Learning Augmentation."  This code includes a number of features:
 * Combined model (from paper) and pretrained models for product design generation and prediction.
 * Extendable to your own dataset via modular configuration file, model architecture, and training sessions.
 * Checkpoint saving and resuming from previously saved model checkpoints. 
